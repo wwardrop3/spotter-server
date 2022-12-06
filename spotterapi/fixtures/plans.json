@@ -1,0 +1,42 @@
+[
+    {
+        "model": "spotterapi.plan",
+        "pk": 1,
+        "fields": {
+            "profile": 1,
+            "start_date": "2022-05-18 11:33:31.353462",
+            "public": "False",
+            "stand_alone": "False"
+        }
+    },
+    {
+        "model": "spotterapi.plan",
+        "pk": 2,
+        "fields": {
+            "profile": 1,
+            "start_date": "2022-05-18 11:33:31.353462",
+            "public": "False",
+            "stand_alone": "False"
+        }
+    },
+    {
+        "model": "spotterapi.plan",
+        "pk": 3,
+        "fields": {
+            "profile": 1,
+            "start_date": "2022-05-18 11:33:31.353462",
+            "public": "False",
+            "stand_alone": "False"
+        }
+    },
+    {
+        "model": "spotterapi.plan",
+        "pk": 4,
+        "fields": {
+            "profile": 2,
+            "start_date": "2022-05-18 11:33:31.353462",
+            "public": "False",
+            "stand_alone": "False"
+        }
+    }
+]

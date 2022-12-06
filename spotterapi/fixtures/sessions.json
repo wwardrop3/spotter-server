@@ -1,0 +1,34 @@
+[
+    {
+        "model": "spotterapi.session",
+        "pk": 1,
+        "fields": {
+            "start_date": "2022-05-18 11:33:31.353462",
+            "plan": 1
+        }
+    },
+    {
+        "model": "spotterapi.session",
+        "pk": 2,
+        "fields": {
+            "start_date": "2022-06-18 11:33:31.353462",
+            "plan": 1
+        }
+    },
+    {
+        "model": "spotterapi.session",
+        "pk": 3,
+        "fields": {
+            "start_date": "2022-06-18 11:33:31.353462",
+            "plan": 2
+        }
+    },
+    {
+        "model": "spotterapi.session",
+        "pk": 4,
+        "fields": {
+            "start_date": "2022-09-18 11:33:31.353462",
+            "plan": 3
+        }
+    }
+]

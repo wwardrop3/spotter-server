@@ -1,0 +1,16 @@
+[
+    {
+        "model": "spotterapi.type",
+        "pk": 1,
+        "fields": {
+            "name": "Lift"
+        }
+    },
+    {
+        "model": "spotterapi.type",
+        "pk": 2,
+        "fields": {
+            "name": "Run"
+        }
+    }
+]

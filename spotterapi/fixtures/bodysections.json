@@ -1,0 +1,23 @@
+[
+    {
+        "model": "spotterapi.bodysection",
+        "pk": 1,
+        "fields": {
+            "name": "Legs"
+        }
+    },
+    {
+        "model": "spotterapi.bodysection",
+        "pk": 2,
+        "fields": {
+            "name": "Arms"
+        }
+    },
+    {
+        "model": "spotterapi.bodysection",
+        "pk": 3,
+        "fields": {
+            "name": "Chest"
+        }
+    }
+]

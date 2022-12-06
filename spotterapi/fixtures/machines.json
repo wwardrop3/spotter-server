@@ -1,0 +1,38 @@
+[
+    {
+        "model": "spotterapi.machine",
+        "pk": 1,
+        "fields": {
+            "name": "Bench Press",
+            "image_url": "https://media.istockphoto.com/photos/home-fitness-bench-with-barbell-picture-id1309046408?b=1&k=20&m=1309046408&s=170667a&w=0&h=KlawXqiGcjq8jOJOvC3RfiZNpySo6R6ErEht0BOVGx0=",
+            "video_url": "https://www.youtube.com/watch?v=SCVCLChPQFY"
+        }
+    },
+    {
+        "model": "spotterapi.machine",
+        "pk": 2,
+        "fields": {
+            "name": "Smith Machine",
+            "image_url": "https://www.lifefitness.com/resource/blob/40628/caa2157a20aff85a077b5484d3ad792e/download-copy-data.png",
+            "video_url": "https://www.youtube.com/watch?v=qPWXdq7idrI"
+        }
+    },
+    {
+        "model": "spotterapi.machine",
+        "pk": 3,
+        "fields": {
+            "name": "Leg Curl Machine",
+            "image_url": "https://cdn.shopify.com/s/files/1/0405/9358/8374/products/Valor-Fitness-CC-4-Adjustable-Leg-Curl-Extension-Machine-1.jpg",
+            "video_url": "https://www.youtube.com/watch?v=fK0uZ3KRZRI"
+        }
+    },
+    {
+        "model": "spotterapi.machine",
+        "pk": 4,
+        "fields": {
+            "name": "Path",
+            "image_url": "https://media.istockphoto.com/photos/walkway-lane-path-with-autumn-trees-in-forest-pathway-way-through-picture-id1319957472?b=1&k=20&m=1319957472&s=170667a&w=0&h=exEXhS2bia0G2bMp6SyADy_ClrDMDWgC1ZI08DNAK5g=",
+            "video_url": "https://www.youtube.com/watch?v=gZEBDahq7F0"
+        }
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "model": "spotterapi.sessionexercise",
+        "pk": 1,
+        "fields": {
+            "session": 1,
+            "exercise": 1,
+            "reps": 5,
+            "sets": 2,
+            "weight": 100,
+            "distance": 0
+        }
+    },
+    {
+        "model": "spotterapi.sessionexercise",
+        "pk": 2,
+        "fields": {
+            "session": 1,
+            "exercise": 2,
+            "reps": 3,
+            "sets": 5,
+            "weight": 10,
+            "distance": 0
+        }
+    },
+    {
+        "model": "spotterapi.sessionexercise",
+        "pk": 3,
+        "fields": {
+            "session": 2,
+            "exercise": 4,
+            "reps": 10,
+            "sets": 2,
+            "weight": 300,
+            "distance": 0
+        }
+    },
+    {
+        "model": "spotterapi.sessionexercise",
+        "pk": 4,
+        "fields": {
+            "session": 3,
+            "exercise": 4,
+            "reps": 0,
+            "sets": 0,
+            "weight": 0,
+            "distance": 5
+        }
+    }
+]

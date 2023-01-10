@@ -25,5 +25,13 @@ class ProfileView (ViewSet):
         
         return Response(serializer.data, status=status.HTTP_200_OK)
         
+
+    def list(self, request):
         
+        profile = Profile.objects.get(user = request.auth.user)
+        
+                
+        serializer = ProfileSerializer(profile)
+        
+        return Response(serializer.data, status=status.HTTP_200_OK)
     

@@ -54,26 +54,41 @@ def register_user(request):
 
     # Create a new user by invoking the `create_user` helper method
     # on Django's built-in User model
-    new_user = User.objects.create_user(
-        username=request.data['username'],
-        password=request.data['password'],
-        email = request.data['email'],
-        first_name=request.data['first_name'],
-        last_name=request.data['last_name'],
+    
+# if the program finds an existing user with that username, set data to error message
+
+    check_user = User.objects.filter(username = request.data['username'])
+    if len(check_user) > 0:
+        data = { 'username error': "username taken"} 
+        pass
+
+    else:
+    
+        new_user = User.objects.create_user(
+            username=request.data['username'],
+            password=request.data['password'],
+            email = request.data['email'],
+            first_name=request.data['first_name'],
+            last_name=request.data['last_name'],
+            
+        )
+
+        # Now save the extra info in the levelupapi_gamer table
+        profile = Profile.objects.create(
+            bio=request.data['bio'],
+            user=new_user,
+            # profile_image_url = request.data['profile_image_url'],
+            created_on = datetime.datetime.now(),
+            active = True
+
+        )
+
+        # Use the REST Framework's token generator on the new user account
+        token = Token.objects.create(user=profile.user)
+        # Return the token to the client
         
-    )
 
-    # Now save the extra info in the levelupapi_gamer table
-    profile = profile.objects.create(
-        bio=request.data['bio'],
-        user=new_user,
-        profile_image_url = request.data['profile_image_url'],
-        created_on = datetime.datetime.now()
 
-    )
+        data = { 'token': token.key }
 
-    # Use the REST Framework's token generator on the new user account
-    token = Token.objects.create(user=profile.user)
-    # Return the token to the client
-    data = { 'token': token.key }
     return Response(data)

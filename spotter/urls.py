@@ -30,7 +30,7 @@ router = DefaultRouter(trailing_slash = False)
 router.register(r'exercises', ExerciseView, "exercise")
 router.register(r'sessions', SessionView, "session")
 router.register(r'plans', PlanView, "plan")
-router.register(r'profiles', ProfileView, "plan")
+router.register(r'profiles', ProfileView, "profile")
 
 urlpatterns = [
     path('admin/', admin.site.urls),

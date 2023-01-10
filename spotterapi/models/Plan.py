@@ -8,6 +8,8 @@ class Plan(models.Model):
     start_date = models.DateTimeField()
     public = models.BooleanField(False)
     stand_alone = models.BooleanField(False)
+    days_of_week = models.TextField()
+    duration = models.IntegerField()
     
     
 
